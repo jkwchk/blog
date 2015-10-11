@@ -194,127 +194,6 @@
           
           
             
-              <a class="post-title-link" href="/2015/10/11/newrimeforwindows/" itemprop="url">
-                全新Windows版Rime輸入法試用心得
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          發表於
-          <time itemprop="dateCreated" datetime="2015-10-11T22:50:50+08:00" content="2015-10-11">
-            2015-10-11
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分類於
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Windows/" itemprop="url" rel="index">
-                  <span itemprop="name">Windows</span>
-                </a>
-              </span>
-
-              
-              
-                ， 
-              
-
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Windows/輸入法/" itemprop="url" rel="index">
-                  <span itemprop="name">輸入法</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/10/11/newrimeforwindows/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/10/11/newrimeforwindows/" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><p>新版的小狼毫終於釋出了，採用Google Input Tools作爲前端框架。有望解決之前小狼毫在Windows 8和以上版本中的相容性問題。</p>
-<p><img src="blog.jkwc.xyz/img/20151011/notice-form-developer.png" alt=""></p>
-<blockquote>
-<p>下載地址：<br>散裝的 rime with gits<br><a href="https://bintray.com/lotem/rime/rime-gits/0" target="_blank" rel="external">https://bintray.com/lotem/rime/rime-gits/0</a><br><a href="http://pan.baidu.com/s/1i3GW9LV" target="_blank" rel="external">http://pan.baidu.com/s/1i3GW9LV</a></p>
-</blockquote>
-<h2 id="安裝">安裝</h2><p>下載之後解壓縮，並確保檔案所在資料夾路徑中沒有空格和英文以外字符。(使用者名稱中含有可能也會導致安裝失敗)</p>
-<p><img src="blog.jkwc.xyz/img/20151011/install1.png" alt=""></p>
-<p>以管理員身份執行 install.bat, 當提示登錄檔等時選擇是，等待Google Input Tools服務啓動，安裝完成。</p>
-<p><img src="blog.jkwc.xyz/img/20151011/install2.png" alt=""></p>
-<p>這時輸入法選單中便會多出一個名爲Input Tools的輸入法。選擇即可使用了。</p>
-<p><img src="blog.jkwc.xyz/img/20151011/install3.png" alt=""></p>
-<h2 id="使用介面">使用介面</h2><p>可能由於是Alpha測試版，一般在右下角的輸入法狀態欄上只有一個ㄓ的圖示，點擊之後可有選擇A(English)和ㄓ(Rime)，並且切換到英文再切換回中文之後，狀態欄會變成類似Google拼音的樣式，多出中英和全形半形等切換按鈕。<br>但有時在Windows 10中這樣做會導致一些應用程式崩潰(不如Chrome, Notepad++等)。</p>
-<p><img src="blog.jkwc.xyz/img/20151011/gui1.png" alt="一般狀態欄"><br><img src="blog.jkwc.xyz/img/20151011/gui2.png" alt="Google拼音式狀態欄"></p>
-<p>打字時的介面像Mac OS和Linux上的輸入法，採用嵌入式設計，個人很喜歡:D</p>
-<p><img src="blog.jkwc.xyz/img/20151011/gui3.png" alt="打字時介面"></p>
-<h2 id="使用注音和其他輸入方案">使用注音和其他輸入方案</h2><p>Rime輸入法最著名的功能便是其支援包括倉頡、注音、粵拼等各種各樣的輸入方案了。但是在Alpha測試版中並沒有「重新部署」功能，想要自定義輸入方案只能在安裝前就設定好了（因爲安裝之後會進行一次部署）。</p>
-<p>以注音輸入方案爲例：</p>
-<p>在下載的檔案的data\rime中找到default.yaml, 修改其中的方案爲自己想要的，在這裏改爲倉頡、倉頡快打和注音、注音・臺灣正體等。這樣再安裝就可以了。</p>
-<p><img src="blog.jkwc.xyz/img/20151011/settings.png" alt="設定輸入方案"></p>
-<p>如果已經安裝想要更改設定的，可以先以管理員身份執行uninstall.bat, 然後去C:\users\username\appdata\roaming\rime\ (這相當於之前版本的「用戶文件夾」)把裏面的資料清空。然後再次進行安裝就可以了。</p>
-<p><img src="blog.jkwc.xyz/img/20151011/menu.png" alt="方案選單"></p>
-<h2 id="已知問題">已知問題</h2><p>有時在輸入法狀態欄切換圖示之後會導致程式崩潰</p>
-<p>仍然無法在Metro Ul中使用</p>
-<p>在某些程式，如Chrome中，打字時候選欄不跟隨</p>
-<h2 id="畢竟這只是Alpha測試版">畢竟這只是Alpha測試版</h2><p>所以會有很多Bug，但日常使用應該足夠了(只要不去觸發崩潰的bug…)</p>
-<p>Happy typing :D</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
               <a class="post-title-link" href="/2015/08/21/han-test/" itemprop="url">
                 Chinese Test中文測試
               </a>
@@ -334,13 +213,6 @@
         
 
         
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/08/21/han-test/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/08/21/han-test/" itemprop="commentsCount"></span>
-            </a>
-          </span>
           
         
       </div>
@@ -410,13 +282,6 @@
 
         
           
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/08/21/My-New-Post/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/08/21/My-New-Post/" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
         
       </div>
     </header>
@@ -484,13 +349,6 @@
 
         
           
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/08/21/postName/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/08/21/postName/" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
         
       </div>
     </header>
@@ -551,13 +409,6 @@
         
 
         
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/08/20/hello-world/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/08/20/hello-world/" itemprop="commentsCount"></span>
-            </a>
-          </span>
           
         
       </div>
@@ -632,21 +483,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">0</span>
               <span class="site-state-item-name">分類</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">標籤</span>
               </a>
           </div>
@@ -708,9 +559,7 @@
     <i class="icon-next-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">JKWC</span>
-
 </div>
-
 
 <div class="powered-by">
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
@@ -723,18 +572,7 @@
   </a>
 </div>
 
-<div class="translate">  <a id="translateLink" href="javascript:translatePage();">简体中文</a></div>
 
-<script type="text/javascript" src="../js/tw_cn.js"></script>
-<script type="text/javascript">
-var defaultEncoding = 1; //1-TC，2-SC
-var translateDelay = 0; 
-var cookieDomain = "http://blog.jkwc.xyz"; 
-var msgToTraditionalChinese = "繁體中文"; 
-var msgToSimplifiedChinese = "简体中文"; 
-var translateButtonId = "translateLink"; 
-translateInitilization();
-</script>
 
 
  </div>
@@ -751,25 +589,6 @@ translateInitilization();
     
     
 
-  
-
-    <script type="text/javascript">
-      var disqus_shortname = 'jkwc';
-      var disqus_identifier = 'index.html';
-      var disqus_title = '';
-      var disqus_url = '';
-
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-      
-    </script>
   
 
 
