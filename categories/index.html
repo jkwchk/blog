@@ -192,10 +192,10 @@
     
       <div class="category-all-page">
         <div class="category-all-title">
-            暫無分類
+            目前共計 2 個分類
         </div>
         <div class="category-all">
-          
+          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/輸入法/">輸入法</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
       </div>
     
@@ -232,21 +232,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">分類</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">標籤</span>
               </a>
           </div>
@@ -308,7 +308,9 @@
     <i class="icon-next-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">JKWC</span>
+
 </div>
+
 
 <div class="powered-by">
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
@@ -321,7 +323,18 @@
   </a>
 </div>
 
+<div class="translate">  <a id="translateLink" href="javascript:translatePage();">简体中文</a></div>
 
+<script type="text/javascript" src="../js/tw_cn.js"></script>
+<script type="text/javascript">
+var defaultEncoding = 1; //1-TC，2-SC
+var translateDelay = 0; 
+var cookieDomain = "http://blog.jkwc.xyz"; 
+var msgToTraditionalChinese = "繁體中文"; 
+var msgToSimplifiedChinese = "简体中文"; 
+var translateButtonId = "translateLink"; 
+translateInitilization();
+</script>
 
 
  </div>
@@ -338,6 +351,25 @@
     
     
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'jkwc';
+      var disqus_identifier = 'categories/index.html';
+      var disqus_title = 'Categories';
+      var disqus_url = 'http://blog.jkwc.xyz/categories/index.html';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+    </script>
   
 
 
