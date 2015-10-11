@@ -1055,7 +1055,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b00fff;
+  background: #ff18bb;
 }
 .sidebar-nav {
   margin: 0;
@@ -1151,7 +1151,8 @@ body {
   margin: 0 5px;
 }
 .powered-by,
-.theme-info {
+.theme-info,
+.translate {
   display: inline-block;
 }
 .powered-by {
@@ -1160,6 +1161,13 @@ body {
 .powered-by::after {
   content: "|";
   padding-left: 10px;
+}
+.translate {
+  margin-left: 10px;
+}
+.translate::before {
+  content: "|";
+  padding-right: 10px;
 }
 .cc-license {
   margin-top: 10px;
